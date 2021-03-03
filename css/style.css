@@ -116,3 +116,70 @@ footer {
   position: sticky;
 
 }
+
+table.cardapio {
+  background-color: ghostwhite;
+  /* border: 4px solid re; */
+  border-collapse: collapse;
+  text-align: center;
+  width: 60%;
+  height: 12rem;
+  margin-top: 2rem;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+table.cardapio td, table.cardapio th {
+  border: 2px solid gray;
+  padding: 3px 2px;
+}
+table.cardapio tbody td {
+  padding: 1rem;
+  font-size: 1rem;
+  color: black;
+  line-height: 1.3rem;
+}
+table.cardapio tr:nth-child(even) {
+  background: darkgray;
+}
+table.cardapio thead {
+  background: gold;
+}
+table.cardapio thead th {
+  font-size: 1.2rem;
+  font-weight: lighter;
+  color: black;
+  text-align: center;
+}
+
+.flex-container2 {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.flex-item2 {
+  text-align: center;
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+  margin: 1rem;
+  width: 25%;
+  max-height: 10%;
+  /* object-fit: scale-down; */
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+}
+
+.quem-somos {
+  font-size: 1.2rem;
+  max-width: 50%;
+  margin-left: 50%;
+  line-height: 1.4rem;
+  transform: translateX(-50%);
+}
+.quem-somos #titulo-about {
+  font-size: 2rem;
+}
