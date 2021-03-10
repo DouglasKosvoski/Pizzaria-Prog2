@@ -31,21 +31,39 @@
     </header>
 
     <main>
-      <form class="center" style="padding: 50px; padding-bottom: 180px; margin: 2rem" action="index.html" method="post">
-        <p class="center" style="font-size: 1.2rem; line-height: 1.2rem;">Faca o seu Login</p>
-        <fieldset class="center" style="border: none;">
-          <!-- Inputs -->
-          <input style="width: 30%;" type="email" id="email" placeholder="Informe seu email" autofocus><br>
-          <input style="width: 30%;" type="password" id="senha" placeholder="Insira sua senha"><br>
-          <!-- Buttons -->
-          <div class="center">
-            <button class="btn" style="margin: 4px 0 1px 1px; background-color: gold; width: 15%" type="reset">Reset</button>
-            <button class="btn" style="margin: 4px 0 1px 1px; background-color: #19b35b; width: 15%" type="submit">Log In</button>
-          </div>
+      <form method="POST" class="center" action="index.html" style="padding: 40px;">
+        <p style="margin-top: 0; font-size: 1.2rem; line-height: 1.2rem">Faça o seu Cadastro</p>
+        <label for="id_nome">Nome completo: </label>
+        <input type="text" name="field_nome" size="50" maxlength="50" id="id_nome" placeholder="Insira seu nome" autofocus><br>
 
-          <p class="center">Não possui uma conta? Crie seu cadastro <a href="./cadastro.html">aqui</a>.</p>
+        <label for="id_email">E-mail: </label>
+        <input type="email" name="field_email" size="50" maxlength="50" placeholder="Informe o e-mail" id="id_email"><br>
 
-        </fieldset>
+        <label for="id_tel">Telefone: </label>
+        <input type="tel" name="field_tel" id="id_tel" placeholder="Contato"><br>
+
+        <label for="id_dn">Data de nascimento: </label>
+        <input type="date" name="field_dn" id="id_dn"><br>
+
+        <label for="id_senha1">Senha: </label>
+        <input type="password" name="field_senha1" id="id_senha1" placeholder="Senha"><br>
+
+        <label for="id_senha2">Confirme a senha: </label>
+        <input type="password" name="field_senha2" id="id_senha2" placeholder="Confirme a senha"><br>
+
+        <label for="id_endereco">Endereço: </label>
+        <input type="text" name="field_endereco" size="50" maxlength="50" id="id_endereco" placeholder="Rua, número, complemento"><br>
+
+        <label for="id_obs">Observações: </label>
+        <textarea style="vertical-align: top; width: 65.5%" name="field_obs" rows="5" cols="50" placeholder="Informações adicionais" id="id_obs"></textarea>
+
+        <!-- buttons -->
+        <div class="center" style="margin-top: 4px">
+            <input class="btn" style="text-align: center; width: 15%; background-color: gold;" type="reset" value="Limpar">
+            <input class="btn" style="text-align: center; width: 15%; background-color: #19b35b;" type="submit" value="Cadastrar">
+        </div>
+
+        <p class="center">Já é cadastrado? Faça seu <a href="./cliente.html">Login</a>.</p>
       </form>
     </main>
 

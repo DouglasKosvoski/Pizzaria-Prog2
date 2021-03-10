@@ -40,6 +40,11 @@ footer {
   margin-right: 50px;
 }
 
+a {
+  color: gold;
+  text-decoration: none;
+}
+
 .a {
   position: sticky;
   position: -webkit-sticky;
@@ -195,13 +200,17 @@ table.cardapio thead th {
 }
 
 form input {
-  color: red;
+  text-align: justify;
+  vertical-align: middle;
+  color: black;
   width: 65%;
   font-size: 0.8rem;
-  line-height: 1rem;
+  line-height: 1.5rem;
   margin: 2px;
   border-radius: 3px;
   border: 0;
+  padding-left: 5px;
+  margin-top: 5px;
 }
 form label {
   margin: 0px;
