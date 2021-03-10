@@ -31,7 +31,34 @@
     </header>
 
     <main>
-      <p>Formulario de Contato e plugin do GoogleMaps</p>
+      <div class="flex-container2">
+
+        <div class="flex-item2" style="margin: 0">
+          <p style="text-align: center; font-size: 1.2rem">Formulario de Contato</p>
+          <form class="" action="index.html" method="post">
+            <label for="name">Nome</label>
+            <input type="text" id="name" name="name" placeholder="Nome completo" autofocus><br>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Email"><br>
+            <label for="tel">Telefone</label>
+            <input type="number" id="tel" name="tel" placeholder="Contato"><br>
+            <label for="subject">Assunto</label>
+            <input type="text" id="subject" name="subject" placeholder="Assunto"><br>
+            <label for="place">Local</label>
+            <input type="text" id="place" name="place" placeholder="Ex: R: Seu Joao, bairro Itaipava 404-D"><br>
+            <textarea style="width: 80%; margin-left: 10px" name="subject" rows="8" cols="15" placeholder="Digite aqui a sua mensagem"></textarea>
+            <br>
+            <button class="flex-item2 btn" style="margin-left: 10px;background-color: gold" type="reset" name="button">Reset</button>
+            <button class="flex-item2 btn" style="background-color: #19b35b" type="submit" name="button">Enviar</button>
+          </form>
+        </div>
+
+        <div class="flex-item2">
+          <iframe style="width: 100%;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7872.204757428124!2d-40.504353684161394!3d-9.412416258824086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x773710a44ea4681%3A0xa8bdd408cbab10d4!2sFrancesco%20Pizzaria!5e0!3m2!1spt-BR!2sbr!4v1615338622389!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+      </div>
+
     </main>
 
     <!-- Contacts and Social Media -->
