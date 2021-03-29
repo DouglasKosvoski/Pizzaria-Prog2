@@ -1,9 +1,39 @@
+/* 
+#3F2DA5
+#5038BC
+#6146D9
+#7354F4
+#7E6CFB
+#7E84F3
+#7D99ED
+#77ADE6
+#70C2DF
+#74D3DC
+#9EDFE5
+#C3EBEF
+#DDF3F5
+#F4FBFC
+
+background = #7E6CFB
+font-color = #F4FBFC
+head-footer= #6146D9
+head_footer_border = #77ADE6
+text/box shadow = #3F2DA5
+ */
+
 body {
-  background-color: black;
-  color: white;
+  background-color: #7E6CFB;
+  color: #F4FBFC;
   font-family: sans-serif;
   font-weight: normal;
   overflow-x: hidden;
+  margin: 0;
+  user-select: none;
+}
+
+img {
+  pointer-events: none;
+  user-select: none;
 }
 
 aside {
@@ -15,6 +45,7 @@ aside {
   float: right;
   font-style: italic;
   transform: translate(-50%, -50%);
+  text-shadow: 2px 2px 2px #3F2DA5;
 }
 
 aside p {
@@ -27,30 +58,29 @@ aside p {
 aside img {
   width: 100%;
   object-fit: fill;
-  -webkit-box-shadow: 0px 10px 15px -5px gold;
-  box-shadow: 0px 10px 15px -5px gold;
+  -webkit-box-shadow: 0px 10px 15px -5px #3F2DA5;
+  box-shadow: 0px 10px 15px -5px #3F2DA5;
+  user-select: none;
 }
 
 footer {
-  position: absolute;
+  /* position: absolute; */
   width: 100%;
   height: 40%;
-  background-color: rgba(0, 0, 0, 0.7);
-  border-top: 4px solid red;
+  background-color: #6146D9;
+  border-top: 4px solid #77ADE6;
   margin-right: 50px;
 }
 
 a {
-  color: gold;
+  color: #F4FBFC;
+  text-shadow: 2px 2px 2px #3F2DA5;
   text-decoration: none;
 }
 
-.a {
-  position: sticky;
-  position: -webkit-sticky;
-  background-color: black;
-  top: 0;
-  z-index: 1;
+header {
+  background-color: #6146D9;
+  border-bottom: 4px solid #77ADE6;
 }
 
 .center {
@@ -60,12 +90,13 @@ a {
 .background_img {
   width: 100%;
   height: 100%;
-  opacity: 0.10;
+  opacity: 0.1;
 }
 
 .title {
-  margin: 1rem;
-  margin-left: 5rem;
+  margin: 0;
+  padding: 2rem;
+  padding-bottom: 1rem;
   font-size: 2rem;
   font-weight: lighter;
   color: white;
@@ -73,30 +104,25 @@ a {
 }
 
 .navbar {
-  padding-left: 4rem;
-  padding-top: 0px;
-  padding-bottom: 10px;
-  border-bottom: 4px solid red;
+  padding: 2rem;
+  padding-top: 1rem;
 }
 
 .navitem {
   text-decoration: none;
-  color: gold;
   font-size: 1.2rem;
-  padding: 1rem;
+  padding-right: 1rem;
 }
 
 .slogan {
   font-size: 3rem;
   position: absolute;
   top: 50%;
-  background: -webkit-linear-gradient(#ff1f00, gold);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   left: 50%;
   transform: translate(-50%,-50%);
   max-width: 50%;
   line-height: 4rem;
+  text-shadow: 2px 2px 2px #3F2DA5;
 }
 
 .flex-container {
@@ -176,24 +202,48 @@ table.cardapio thead th {
 }
 
 .flex-item2 {
-  text-align: center;
+  text-align: justify;
   order: 0;
   flex: 0 1 auto;
   align-self: auto;
-  margin: 1rem;
-  width: 40%;
+  padding: 0.5rem;
   max-height: 10%;
-  /* object-fit: scale-down; */
   font-size: 1.2rem;
   line-height: 1.4rem;
+  width: 25%;
+}
+
+.flex-container3 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.flex-item3 {
+  text-align: justify;
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+  padding: 0.5rem;
+  max-height: 10%;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  width: 35%;
 }
 
 .quem-somos {
   font-size: 1.2rem;
-  max-width: 50%;
-  margin-left: 50%;
+  max-width: 60%;
   line-height: 1.4rem;
   transform: translateX(-50%);
+  text-align: justify;
+  text-justify: inter-word;
+  margin-left: 50%;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
 }
 .quem-somos #titulo-about {
   font-size: 2rem;
@@ -230,7 +280,7 @@ form label {
    padding: 0.5em;
    border-radius: 3px;
    border: 0;
-   text-shadow: 0px 1px 1px white;
+   text-align: center;
 }
 .btn:hover {
   opacity: 0.8;
