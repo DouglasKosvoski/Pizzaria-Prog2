@@ -31,7 +31,7 @@
     </header>
 
     <main>
-      <form method="POST" class="center" action="index.html" style="padding: 40px;">
+      <form method="POST" class="cadastro center" action="index.html" style="padding: 40px;">
         <p style="margin-top: 0; font-size: 1.2rem; line-height: 1.2rem;text-shadow: 2px 2px 2px #3F2DA5;">Faça o seu Cadastro</p>
         <label for="id_nome">Nome completo: </label>
         <input type="text" name="field_nome" size="50" maxlength="50" id="id_nome" placeholder="Insira seu nome" autofocus><br>
@@ -55,13 +55,12 @@
         <input type="text" name="field_endereco" size="50" maxlength="50" id="id_endereco" placeholder="Rua, número, complemento"><br>
 
         <label for="id_obs">Observações: </label>
-        <textarea style="vertical-align: top; width: 65.5%" name="field_obs" rows="5" cols="50" placeholder="Informações adicionais" id="id_obs"></textarea>
+        <textarea style="vertical-align: top;" name="field_obs" rows="5" cols="50" placeholder="Informações adicionais" id="id_obs"></textarea>
 
         <!-- buttons -->
-        <div class="center" style="margin-top: 4px">
-            <input class="btn" style="text-align: center; width: 15%; background-color: gold;" type="reset" value="Limpar">
-            <input class="btn" style="text-align: center; width: 15%; background-color: #19b35b;" type="submit" value="Cadastrar">
-        </div>
+        <br>
+        <input class="btn" style="text-align: center; background-color: gold;" type="reset" value="Limpar">
+        <input class="btn" style="text-align: center; background-color: #19b35b;" type="submit" value="Cadastrar">
 
         <p class="center">Já é cadastrado? Faça seu <a href="./cliente.html">Login</a>.</p>
       </form>
@@ -72,32 +71,27 @@
       <!-- Company Name -->
       <div class="flex-item">
         <a style="text-decoration: none" href="../src/index.html">
-          <p style="font-size: 1.5rem;">Francesco Pizzaria ©</p>
+          <p style="font-size: 1.4rem">Francesco Pizzaria ©</p>
         </a>
       </div>
 
       <!-- Contacts -->
       <div class="flex-item">
-        <p style="font-size: 1.5rem;">Contatos</p>
+        <p style="font-size: 1.4rem">Contatos</p>
         <p><i class="fas fa-phone-alt"></i> (49) 91234-5678</p>
         <p><i class="fab fa-whatsapp"></i> (49) 99876-5432</p>
         <a style="text-decoration: none; color: white" href="mailto:chapaquente@Francesco.com">
-          <p><i class="far fa-envelope"></i> chapaquente@Francesco.com</p>
+          <p><i class="far fa-envelope"></i> contato@Francesco.com</p>
         </a>
       </div>
 
       <!-- Social Media -->
       <div class="flex-item">
-        <p style="font-size: 1.5rem;">Redes Socias</p>
+        <p style="font-size: 1.4rem">Redes Socias</p>
         <p><i class="fab fa-facebook-square"></i> Pizzaria Francesco</p>
         <p><i class="fab fa-instagram"></i> ChapaQuente</p>
       </div>
 
-      <!-- Observation -->
-      <div class="flex-item">
-        <p style="font-size: 1.2rem;">Tele-entrega 24h</p>
-        <p>Todos os dias da Semana</p>
-      </div>
     </footer>
   </body>
 </html>

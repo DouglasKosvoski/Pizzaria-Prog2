@@ -82,6 +82,21 @@ header {
   text-align: center;
 }
 
+.login {
+  margin: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 50%;
+}
+.login button{
+  margin: 5px;
+  padding: 0.5rem;
+}
+
+.cadastro {
+  margin-top: 0;
+  margin-bottom: 4rem;
+}
+
 .background_img {
   display: none;
 }
@@ -129,10 +144,15 @@ header {
   order: 0;
   flex: 0 1 auto;
   align-self: auto;
-  padding: 10px;
+  font-size: 1rem;
   width: 100%;
 }
-
+.flex-item p {
+  padding: 0;
+  margin: 1rem;
+  margin-top: 1.2rem;
+  line-height: 1rem;
+}
 .chat {
   position: sticky;
 
@@ -143,9 +163,8 @@ textarea {
   margin-top: 4px;
   margin-right: 2px;
   font-family: sans-serif;
-  width: 71.5%;
+  width: 100%;
   border-radius: 3px;
-  border: 0;
 }
 
 table.cardapio {
@@ -227,7 +246,11 @@ table.cardapio thead th {
 .flex-item3 p {
   text-align: center;
 }
-
+.flex-item3 button {
+  margin-left: 4px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
 .quem-somos {
   width: 90%;
   font-size: 1rem;
@@ -245,12 +268,13 @@ table.cardapio thead th {
 .btn {
   font-size: 1rem;
   line-height: 1rem;
-  width: 45%;
-  margin: 0;
+  width: 100%;
+  /* margin: 5px; */
   border-radius: 3px;
   border: 0;
   text-align: center;
   box-shadow: 0px 2px 15px -5px #3F2DA5;
+  padding: 0.5rem;
 }
 .btn:hover {
   opacity: 0.8;
@@ -278,10 +302,6 @@ form input {
 form label {
   display: none;
 }
-
-/* form fieldset button {
-  padding: 1rem;
-}  */
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -325,8 +345,18 @@ input[type=number] {
     order: 0;
     flex: 0 1 auto;
     align-self: auto;
-    margin: 10px;
-    width: 20%;
+    padding: 10px;
+    width: 30%;
+    font-size: 1.2rem;
+    /* font-size: 1rem; */
+    line-height: 1rem;
+    /* background-color: black; */
+  }
+  .flex-item p {
+    font-size: 1rem;
+    /* font-size: 1rem; */
+    line-height: 1rem;
+    /* background-color: black; */
   }
   .flex-item2 {
     text-align: justify;
@@ -348,7 +378,16 @@ input[type=number] {
     max-height: 10%;
     font-size: 1.2rem;
     line-height: 1.4rem;
-    width: 35%;
+    width: 45%;
+  }
+  .flex-item3 input {
+    width: 80%;
+  }
+  .flex-item3 button {
+    margin: 0;
+    margin-top: 5px;
+    width: 30%;
+    transform: translateX(+75%);
   }
   form input {
     text-align: justify;
@@ -377,7 +416,9 @@ input[type=number] {
     line-height: 1rem;
     width: 20%;
     margin: 4px;
-    padding: 0.5em;
+    margin-left: 0px;
+    margin-right: 1px;
+    padding: 0.5rem;
     border-radius: 3px;
     border: 0;
     text-align: center;
@@ -411,13 +452,11 @@ input[type=number] {
     text-shadow: 2px 2px 2px #3F2DA5;
   }
   footer {
-    padding: 2rem;
-    font-size: 1.2rem;
     width: 100%;
     height: 40%;
     background-color: #6146D9;
     border-top: 4px solid #77ADE6;
-    margin-right: 50px;
+    /* margin-right: 50px; */
   }
   .quem-somos {
     font-size: 1.2rem;
@@ -427,10 +466,16 @@ input[type=number] {
     text-align: justify;
     text-justify: inter-word;
     margin-left: 50%;
-    margin-top: 2.5rem;
-    margin-bottom: 2.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
   }
   .quem-somos #titulo-about {
+    margin: 0;
+    margin-top: 2rem;
+    font-size: 2rem;
+  }
+  .quem-somos #titulo-quem-somos {
+    margin: 0;
     font-size: 2rem;
   }
   .img-equipe {
@@ -439,8 +484,21 @@ input[type=number] {
   }
   .login {
     padding: 10rem;
+    padding-bottom: 14rem;
   }
   .login p{
     font-size: 1.4rem;
+  }
+  .cadastro {
+    margin-top: 2rem;
+    margin-bottom: 6rem;
+  }
+  textarea {
+    resize: none;
+    margin-top: 4px;
+    margin-right: 2px;
+    font-family: sans-serif;
+    width: 40%;
+    border-radius: 3px;
   }
 }
