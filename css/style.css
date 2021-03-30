@@ -27,8 +27,8 @@ body {
   font-family: sans-serif;
   font-weight: normal;
   overflow-x: hidden;
-  margin: 0;
   user-select: none;
+  margin: 0;
 }
 
 img {
@@ -37,15 +37,7 @@ img {
 }
 
 aside {
-  position: absolute;
-  left: 90%;
-  top: 60%;
-  width: 14rem;
-  height: 30rem;
-  float: right;
-  font-style: italic;
-  transform: translate(-50%, -50%);
-  text-shadow: 2px 2px 2px #3F2DA5;
+  display: none;
 }
 
 aside p {
@@ -68,8 +60,10 @@ footer {
   width: 100%;
   height: 40%;
   background-color: #6146D9;
+  box-shadow: 0px -4px 15px -5px #3F2DA5;
   border-top: 4px solid #77ADE6;
   margin-right: 50px;
+
 }
 
 a {
@@ -81,6 +75,7 @@ a {
 header {
   background-color: #6146D9;
   border-bottom: 4px solid #77ADE6;
+  box-shadow: 0px 4px 10px -5px #3F2DA5;
 }
 
 .center {
@@ -88,15 +83,12 @@ header {
 }
 
 .background_img {
-  width: 100%;
-  height: 100%;
-  opacity: 0.1;
+  display: none;
 }
 
 .title {
   margin: 0;
-  padding: 2rem;
-  padding-bottom: 1rem;
+  padding: 1rem;
   font-size: 2rem;
   font-weight: lighter;
   color: white;
@@ -104,24 +96,22 @@ header {
 }
 
 .navbar {
-  padding: 2rem;
-  padding-top: 1rem;
+  padding: 1rem;
 }
 
 .navitem {
+  /* display: block; */
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1rem;
   padding-right: 1rem;
 }
 
 .slogan {
-  font-size: 3rem;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  max-width: 50%;
-  line-height: 4rem;
+  padding-top: 25%;
+  padding-bottom: 25%;
+  font-size: 2rem;
+  max-width: 100%;
+  line-height: 3rem;
   text-shadow: 2px 2px 2px #3F2DA5;
 }
 
@@ -139,8 +129,8 @@ header {
   order: 0;
   flex: 0 1 auto;
   align-self: auto;
-  margin: 10px;
-  width: 20%;
+  padding: 10px;
+  width: 100%;
 }
 
 .chat {
@@ -206,11 +196,8 @@ table.cardapio thead th {
   order: 0;
   flex: 0 1 auto;
   align-self: auto;
-  padding: 0.5rem;
-  max-height: 10%;
-  font-size: 1.2rem;
-  line-height: 1.4rem;
-  width: 25%;
+  padding: 1rem;
+  width: 90%;
 }
 
 .flex-container3 {
@@ -227,64 +214,74 @@ table.cardapio thead th {
   order: 0;
   flex: 0 1 auto;
   align-self: auto;
-  padding: 0.5rem;
+  padding: 1rem;
   max-height: 10%;
+  max-width: 100%;
   font-size: 1.2rem;
   line-height: 1.4rem;
-  width: 35%;
+  width: 100%;
+}
+.flex-item3 iframe {
+  width: 100%;
+}
+.flex-item3 p {
+  text-align: center;
 }
 
 .quem-somos {
-  font-size: 1.2rem;
-  max-width: 60%;
-  line-height: 1.4rem;
-  transform: translateX(-50%);
+  width: 90%;
+  font-size: 1rem;
+  line-height: 1.2rem;
   text-align: justify;
   text-justify: inter-word;
-  margin-left: 50%;
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
+  padding: 1rem;
 }
 .quem-somos #titulo-about {
-  font-size: 2rem;
+  font-size: 1.6rem;
+}
+.flex-item2 #titulo-missao {
+  font-size: 1.6rem;
+}
+.btn {
+  font-size: 1rem;
+  line-height: 1rem;
+  width: 45%;
+  margin: 0;
+  border-radius: 3px;
+  border: 0;
+  text-align: center;
+  box-shadow: 0px 2px 15px -5px #3F2DA5;
+}
+.btn:hover {
+  opacity: 0.8;
+}
+
+.img-equipe {
+  max-width: 90%;
+  margin: 1rem;
+  margin-bottom: 3rem;
 }
 
 form input {
+  align-self: center;
   text-align: justify;
   vertical-align: middle;
   color: black;
-  width: 65%;
+  width: 100%;
   font-size: 0.8rem;
   line-height: 1.5rem;
   margin: 2px;
   border-radius: 3px;
   border: 0;
-  padding-left: 5px;
-  margin-top: 5px;
-}
-form label {
-  margin: 0px;
-  margin-right: 2px;
-  font-size: 1rem;
-  line-height: 1rem;
-  display: inline-block;
-  text-align: right;
-  width: 15%;
 }
 
-.btn {
-   font-size: 1rem;
-   line-height: 1rem;
-   width: 39%;
-   margin: 4px;
-   padding: 0.5em;
-   border-radius: 3px;
-   border: 0;
-   text-align: center;
+form label {
+  display: none;
 }
-.btn:hover {
-  opacity: 0.8;
-}
+
+/* form fieldset button {
+  padding: 1rem;
+}  */
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -296,4 +293,154 @@ input::-webkit-inner-spin-button {
 input[type=number] {
   /* Firefox */
   -moz-appearance: textfield;
+}
+
+@media only screen and (min-width: 700px){
+  header {
+    background-color: #6146D9;
+    border-bottom: 4px solid #77ADE6;
+  }
+  .title {
+    margin: 0;
+    padding: 2rem;
+    padding-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: lighter;
+    color: white;
+    text-transform: capitalize;
+  }
+  .navbar {
+    display: inline-flex;
+    padding: 2rem;
+    padding-top: 1rem;
+  }
+  .navitem {
+    display: inherit;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding-right: 1rem;
+  }
+  .flex-item {
+    text-align: center;
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+    margin: 10px;
+    width: 20%;
+  }
+  .flex-item2 {
+    text-align: justify;
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+    padding: 0.5rem;
+    max-height: 10%;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    width: 40%;
+  }
+  .flex-item3 {
+    text-align: justify;
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+    padding: 0.5rem;
+    max-height: 10%;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    width: 35%;
+  }
+  form input {
+    text-align: justify;
+    vertical-align: middle;
+    color: black;
+    width: 40%;
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+    margin: 2px;
+    border-radius: 3px;
+    border: 0;
+    padding-left: 5px;
+    margin-top: 5px;
+  }
+  form label {
+    margin: 0px;
+    margin-right: 2px;
+    font-size: 1rem;
+    line-height: 1rem;
+    display: inline-block;
+    text-align: right;
+    width: 15%;
+  }
+  .btn {
+    font-size: 1rem;
+    line-height: 1rem;
+    width: 20%;
+    margin: 4px;
+    padding: 0.5em;
+    border-radius: 3px;
+    border: 0;
+    text-align: center;
+  }
+  .background_img {
+    display: inherit;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+  }
+  .slogan {
+    font-size: 3rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 50%;
+    line-height: 4rem;
+    text-shadow: 2px 2px 2px #3F2DA5;
+  }
+  aside {
+    display: inherit;
+    position: absolute;
+    left: 90%;
+    top: 60%;
+    width: 14rem;
+    height: 30rem;
+    float: right;
+    font-style: italic;
+    transform: translate(-50%, -50%);
+    text-shadow: 2px 2px 2px #3F2DA5;
+  }
+  footer {
+    padding: 2rem;
+    font-size: 1.2rem;
+    width: 100%;
+    height: 40%;
+    background-color: #6146D9;
+    border-top: 4px solid #77ADE6;
+    margin-right: 50px;
+  }
+  .quem-somos {
+    font-size: 1.2rem;
+    max-width: 60%;
+    line-height: 1.4rem;
+    transform: translateX(-50%);
+    text-align: justify;
+    text-justify: inter-word;
+    margin-left: 50%;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+  .quem-somos #titulo-about {
+    font-size: 2rem;
+  }
+  .img-equipe {
+    max-width: 60%;
+    margin-bottom: 5rem;
+  }
+  .login {
+    padding: 10rem;
+  }
+  .login p{
+    font-size: 1.4rem;
+  }
 }
