@@ -23,7 +23,6 @@ body {
   color: #f8f9fa;
   font-family: sans-serif;
   font-weight: normal;
-  /* overflow-x: hidden; */
   user-select: none;
   margin: 0;
 }
@@ -47,7 +46,6 @@ aside p {
 aside img {
   width: 100%;
   object-fit: fill;
-  -webkit-box-shadow: 0px 10px 15px -5px #495057;
   box-shadow: 0px 10px 15px -5px #495057;
   user-select: none;
 }
@@ -84,6 +82,7 @@ header {
   padding-top: 1rem;
   padding-bottom: 50%;
 }
+
 .login button{
   margin: 5px;
   padding: 0.5rem;
@@ -155,12 +154,14 @@ header {
   /* margin-top: 0; */
   padding-bottom: 1rem;
 }
+
 .flex-item p {
   padding: 0;
   margin: 1rem;
   margin-top: 1.2rem;
   line-height: 1rem;
 }
+
 .chat {
   position: sticky;
 
@@ -186,22 +187,27 @@ table.cardapio {
   margin-left: 50%;
   transform: translateX(-50%);
 }
+
 table.cardapio td, table.cardapio th {
   border: 2px solid gray;
   padding: 3px 2px;
 }
+
 table.cardapio tbody td {
   padding: 1rem;
   font-size: 1rem;
   color: black;
   line-height: 1.3rem;
 }
+
 table.cardapio tr:nth-child(even) {
   background: darkgray;
 }
+
 table.cardapio thead {
   background: gold;
 }
+
 table.cardapio thead th {
   font-size: 1.2rem;
   font-weight: lighter;
@@ -217,6 +223,7 @@ table.cardapio thead th {
   align-content: center;
   align-items: center;
 }
+
 .flex-item2 {
   text-align: justify;
   order: 0;
@@ -234,6 +241,7 @@ table.cardapio thead th {
   align-content: center;
   align-items: center;
 }
+
 .flex-item3 {
   text-align: justify;
   order: 0;
@@ -246,17 +254,21 @@ table.cardapio thead th {
   line-height: 1.4rem;
   width: 100%;
 }
+
 .flex-item3 iframe {
   width: 100%;
 }
+
 .flex-item3 p {
   text-align: center;
 }
+
 .flex-item3 button {
   margin-left: 4px;
   margin-top: 2px;
   margin-bottom: 2px;
 }
+
 .quem-somos {
   width: 90%;
   font-size: 1rem;
@@ -265,12 +277,15 @@ table.cardapio thead th {
   text-justify: inter-word;
   padding: 1rem;
 }
+
 .quem-somos #titulo-about {
   font-size: 1.6rem;
 }
+
 .flex-item2 #titulo-missao {
   font-size: 1.6rem;
 }
+
 .btn {
   font-size: 1rem;
   line-height: 1rem;
@@ -282,6 +297,7 @@ table.cardapio thead th {
   box-shadow: 0px 2px 15px -5px #495057;
   padding: 0.5rem;
 }
+
 .btn:hover {
   opacity: 0.8;
 }
@@ -309,21 +325,10 @@ form label {
   display: none;
 }
 
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  /* Remove input number arrows */
-  /* Chrome, Safari, Edge, Opera */
-  -webkit-appearance: none;
-  margin: 0;
-}
-input[type=number] {
-  /* Firefox */
-  -moz-appearance: textfield;
-}
-
 #chat {
   display: none;
 }
+
 #show_menu {
 	background-color: #495057;
 	border: 1px solid #f8f9fa;
@@ -332,11 +337,13 @@ input[type=number] {
   font-size: 2rem;
 }
 
+/* Dispositivos Moveis */
 @media only screen and (min-width: 700px){
   header {
     background-color: #212529;
     border-bottom: 4px solid #495057;
   }
+
   .title {
     margin: 0;
     padding: 2rem;
@@ -347,11 +354,13 @@ input[type=number] {
     text-transform: capitalize;
     display: block;
   }
+
   .navbar {
     display: inline-flex;
     padding-left: 1rem;
     padding-bottom: 1rem;
   }
+
   .navitem {
     display: inherit;
     border: none;
@@ -359,9 +368,11 @@ input[type=number] {
     font-size: 1.2rem;
     padding-right: 1rem;
   }
+
   .flex-container {
     display: inline-flex;
   }
+
   .flex-item {
     text-align: center;
     order: 0;
@@ -373,12 +384,14 @@ input[type=number] {
     line-height: 1rem;
     border: none;
   }
+
   .flex-item p {
     font-size: 1rem;
     /* font-size: 1rem; */
     line-height: 1rem;
     /* background-color: black; */
   }
+
   .flex-item2 {
     text-align: justify;
     order: 0;
@@ -390,6 +403,7 @@ input[type=number] {
     line-height: 1.4rem;
     width: 40%;
   }
+
   .flex-item3 {
     text-align: justify;
     order: 0;
@@ -401,15 +415,18 @@ input[type=number] {
     line-height: 1.4rem;
     width: 45%;
   }
+
   .flex-item3 input {
     width: 80%;
   }
+
   .flex-item3 button {
     margin: 0;
     margin-top: 5px;
     width: 30%;
     transform: translateX(+75%);
   }
+
   form input {
     text-align: justify;
     vertical-align: middle;
@@ -423,6 +440,7 @@ input[type=number] {
     padding-left: 5px;
     margin-top: 5px;
   }
+
   form label {
     margin: 0px;
     margin-right: 2px;
@@ -432,6 +450,7 @@ input[type=number] {
     text-align: right;
     width: 15%;
   }
+
   .btn {
     font-size: 1rem;
     line-height: 1rem;
@@ -444,12 +463,14 @@ input[type=number] {
     border: 0;
     text-align: center;
   }
+
   .background_img {
     display: inherit;
     width: 100%;
     height: 100%;
     opacity: 0.1;
   }
+
   .slogan {
     text-align: center;
     font-size: 3rem;
@@ -463,6 +484,7 @@ input[type=number] {
     line-height: 4rem;
     text-shadow: 2px 2px 2px #495057;
   }
+
   aside {
     display: inherit;
     position: absolute;
@@ -475,6 +497,7 @@ input[type=number] {
     transform: translate(-50%, -50%);
     text-shadow: 2px 2px 2px #495057;
   }
+
   footer {
     width: 100%;
     height: 40%;
@@ -482,6 +505,7 @@ input[type=number] {
     border-top: 4px solid #495057;
     margin: 0;
   }
+
   .quem-somos {
     font-size: 1.2rem;
     max-width: 60%;
@@ -493,30 +517,37 @@ input[type=number] {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
   }
+
   .quem-somos #titulo-about {
     margin: 0;
     margin-top: 2rem;
     font-size: 2rem;
   }
+
   .quem-somos #titulo-quem-somos {
     margin: 0;
     font-size: 2rem;
   }
+
   .img-equipe {
     max-width: 60%;
     margin-bottom: 5rem;
   }
+
   .login {
     padding: 10rem;
     padding-bottom: 14rem;
   }
+
   .login p{
     font-size: 1.4rem;
   }
+
   .cadastro {
     margin-top: 2rem;
     margin-bottom: 6rem;
   }
+
   textarea {
     resize: none;
     margin-top: 4px;
@@ -525,6 +556,7 @@ input[type=number] {
     width: 40%;
     border-radius: 3px;
   }
+
   #chat{
 		display: flex; 
 		color: black;
@@ -540,6 +572,7 @@ input[type=number] {
 		justify-content: space-between;
     opacity: 0.9;
 	}
+
 	#chat .chat-button{
 		background-color: #cccccc;
     border: 1px outset black;
@@ -548,9 +581,11 @@ input[type=number] {
 		margin: 2px;
 		cursor: pointer;
 	}
+
 	#chat #botoes{
 		display: flex;
 	}
+
   #show_menu{
   	display: none;
   }
