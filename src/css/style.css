@@ -1,29 +1,26 @@
 /* 
-#3F2DA5
-#5038BC
-#6146D9
-#7354F4
-#7E6CFB
-#7E84F3
-#7D99ED
-#77ADE6
-#70C2DF
-#74D3DC
-#9EDFE5
-#C3EBEF
-#DDF3F5
-#F4FBFC
+  Palette
+  #212529
+  #343a40
+  #495057
+  #6c757d
+  #adb5bd
+  #ced4da
+  #dee2e6
+  #e9ecef
+  #f8f9fa
 
-background = #7E6CFB
-font-color = #F4FBFC
-head-footer= #6146D9
-head_footer_border = #77ADE6
-text/box shadow = #3F2DA5
- */
+  background = #343a40
+  font-color = #f8f9fa
+  head-footer= #212529
+  head_footer_border = #495057
+  text/box shadow = #495057
+  chat = #f8f9fa
+*/
 
 body {
-  background-color: #7E6CFB;
-  color: #F4FBFC;
+  background-color: #343a40;
+  color: #f8f9fa;
   font-family: sans-serif;
   font-weight: normal;
   overflow-x: hidden;
@@ -50,8 +47,8 @@ aside p {
 aside img {
   width: 100%;
   object-fit: fill;
-  -webkit-box-shadow: 0px 10px 15px -5px #3F2DA5;
-  box-shadow: 0px 10px 15px -5px #3F2DA5;
+  -webkit-box-shadow: 0px 10px 15px -5px #495057;
+  box-shadow: 0px 10px 15px -5px #495057;
   user-select: none;
 }
 
@@ -59,23 +56,23 @@ footer {
   /* position: absolute; */
   width: 100%;
   height: 40%;
-  background-color: #6146D9;
-  box-shadow: 0px -4px 15px -5px #3F2DA5;
-  border-top: 4px solid #77ADE6;
+  background-color: #212529;
+  box-shadow: 0px -4px 15px -5px #495057;
+  border-top: 4px solid #495057;
   margin-right: 50px;
 
 }
 
 a {
-  color: #F4FBFC;
-  text-shadow: 2px 2px 2px #3F2DA5;
+  color: #f8f9fa;
+  text-shadow: 2px 2px 2px #495057;
   text-decoration: none;
 }
 
 header {
-  background-color: #6146D9;
-  border-bottom: 4px solid #77ADE6;
-  box-shadow: 0px 4px 10px -5px #3F2DA5;
+  background-color: #212529;
+  border-bottom: 4px solid #495057;
+  box-shadow: 0px 4px 10px -5px #495057;
 }
 
 .center {
@@ -127,7 +124,7 @@ header {
   font-size: 2rem;
   max-width: 100%;
   line-height: 3rem;
-  text-shadow: 2px 2px 2px #3F2DA5;
+  text-shadow: 2px 2px 2px #495057;
 }
 
 .flex-container {
@@ -273,7 +270,7 @@ table.cardapio thead th {
   border-radius: 3px;
   border: 0;
   text-align: center;
-  box-shadow: 0px 2px 15px -5px #3F2DA5;
+  box-shadow: 0px 2px 15px -5px #495057;
   padding: 0.5rem;
 }
 .btn:hover {
@@ -315,10 +312,14 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
+#chat {
+  display: none;
+}
+
 @media only screen and (min-width: 700px){
   header {
-    background-color: #6146D9;
-    border-bottom: 4px solid #77ADE6;
+    background-color: #212529;
+    border-bottom: 4px solid #495057;
   }
   .title {
     margin: 0;
@@ -430,14 +431,17 @@ input[type=number] {
     opacity: 0.1;
   }
   .slogan {
+    text-align: center;
     font-size: 3rem;
     position: absolute;
     top: 50%;
     left: 50%;
+    margin: 0;
+    padding: 0;
     transform: translate(-50%,-50%);
     max-width: 50%;
     line-height: 4rem;
-    text-shadow: 2px 2px 2px #3F2DA5;
+    text-shadow: 2px 2px 2px #495057;
   }
   aside {
     display: inherit;
@@ -449,13 +453,13 @@ input[type=number] {
     float: right;
     font-style: italic;
     transform: translate(-50%, -50%);
-    text-shadow: 2px 2px 2px #3F2DA5;
+    text-shadow: 2px 2px 2px #495057;
   }
   footer {
     width: 100%;
     height: 40%;
-    background-color: #6146D9;
-    border-top: 4px solid #77ADE6;
+    background-color: #212529;
+    border-top: 4px solid #495057;
     /* margin-right: 50px; */
   }
   .quem-somos {
@@ -501,4 +505,32 @@ input[type=number] {
     width: 40%;
     border-radius: 3px;
   }
+  #chat{
+		display: flex; 
+		color: black;
+		background-color: #f8f9fa;
+    border: 4px outset black;
+    border-radius: 4px;
+		width: 300px;
+		height: 150px;
+		position: fixed;
+		bottom: 0;
+		right: 50px;
+		align-items: flex-start;
+		justify-content: space-between;
+
+	}
+
+	#chat .chat-button{
+		background-color: #cccccc;
+    border: 1px outset black;
+    border-radius: 4px;
+		padding: 2px 5px;
+		margin: 2px;
+		cursor: pointer;
+	}
+
+	#chat #botoes{
+		display: flex;
+	}
 }
