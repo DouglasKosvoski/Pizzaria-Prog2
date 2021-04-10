@@ -17,11 +17,12 @@
 
     <header>
       <!-- Title -->
+      <button type="button" id="show_menu" onclick="show_menu()">&equiv;</button>
       <a style="text-decoration: none" href="../src/index.html">
         <p class="title">Pizzaria Francesco ©</p>
       </a>
       <!-- Navbar -->
-      <nav class="navbar">
+      <nav id="navbar" class="navbar">
         <a class="navitem" href="./index.html">Índice</a>
         <a class="navitem" href="./quemsomos.html">Quem somos</a>
         <a class="navitem" href="./cliente.html">Cliente</a>
@@ -33,7 +34,7 @@
 
     <main>
       <form method="POST" class="cadastro center" action="index.html" style="padding: 40px;">
-        <p style="margin-top: 0; font-size: 1.2rem; line-height: 1.2rem;text-shadow: 2px 2px 2px #3F2DA5;">Faça o seu Cadastro</p>
+        <p style="margin-top: 0; font-size: 1.2rem; line-height: 1.2rem;">Faça o seu Cadastro</p>
         <label for="id_nome">Nome completo: </label>
         <input type="text" name="field_nome" size="50" maxlength="50" id="id_nome" placeholder="Insira seu nome" autofocus><br>
 

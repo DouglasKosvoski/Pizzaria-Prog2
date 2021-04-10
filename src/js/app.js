@@ -3,7 +3,6 @@ function minimize_chat() {
   chat.style.height = '50px';
   texto = document.getElementById("texto");
   texto.innerHTML = 'Chat';
-  console.log("MIN");
 }
 
 function maximize_chat() {
@@ -11,10 +10,31 @@ function maximize_chat() {
   chat.style.height = '150px';
   texto = document.getElementById("texto");
   texto.innerHTML = 'Falar com os atendentes';
-  console.log("MAX");
 }
 
 function close_chat() {
   document.getElementById("chat").style.display = 'none';
-  console.log("Close");
 }
+
+function show_menu() {
+  var nav = document.getElementById("navbar");
+  
+  if (nav.style.display == "block") {
+    nav.style.display = "none";
+  }
+  else {
+    nav.style.display = "block";
+  }
+}
+
+window.onresize = function() {
+  largura = window.innerWidth;
+  var nav = document.getElementById("navbar");
+  
+  if(largura >= 700) {
+    nav.style.display = "inline-flex";
+  }
+  else {
+    nav.style.display = "none";
+  }
+};
