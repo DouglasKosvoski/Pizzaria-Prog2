@@ -134,7 +134,9 @@ header {
 }
 
 .flex-container {
-  display: inline-flex;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  /* display: inline-flex; */
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
