@@ -3,7 +3,7 @@
   
   <!-- Title -->
   <button type="button" id="show_menu" onclick="show_menu()">&equiv;</button>
-  <a style="text-decoration: none" href="../src/index.html">
+  <a style="text-decoration: none" href="./index.php">
     <p class="title">Pizzaria Francesco ©</p>
   </a>
   

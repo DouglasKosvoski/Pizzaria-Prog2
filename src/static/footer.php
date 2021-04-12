@@ -2,7 +2,7 @@
 <footer class="flex-container" style="top: 100%">
   <!-- Company Name -->
   <div class="flex-item">
-    <a style="text-decoration: none" href="../src/index.html">
+    <a style="text-decoration: none" href="./index.php">
       <p style="font-size: 1.4rem">Francesco Pizzaria ©</p>
     </a>
   </div>
