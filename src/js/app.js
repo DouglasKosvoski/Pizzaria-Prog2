@@ -81,9 +81,6 @@ function finalizar_pedido() {
   }
 }
 
-function form_contato() {
-}
-
 function envia_form_contato() {
   var nome = document.getElementById("contato_name").value;
   var email = document.getElementById("contato_email").value;
@@ -120,6 +117,39 @@ function login() {
   }
   else {
     alert("Logado !!!");
+  }
+}
+
+function cadastro() {
+  var nome = document.getElementById("id_nome").value;
+  var email = document.getElementById("id_email").value;
+  var tel = document.getElementById("id_tel").value;
+  var dn = document.getElementById("id_dn").value;
+  var senha1 = document.getElementById("id_senha1").value;
+  var senha2 = document.getElementById("id_senha2").value;
+  var endereco = document.getElementById("id_endereco").value;
+  var obs = document.getElementById("id_obs").value;
+  
+  if (senha1 == "" || senha2 == "" || senha1 != senha2) {
+    alert("As senhas são diferentes... confirme a senha corretamente");
+  }
+  else if (nome == ""){
+    alert("Insira o nome");
+  }
+  else if (email == "") {
+    alert("Insira o email");
+  }
+  else if (tel == "") {
+    alert("Insira o tel");
+  }
+  else if (dn == "") {
+    alert("Insira a data de nascimento");
+  }
+  else if (endereco == "") {
+    alert("Insira o endereco");
+  }
+  else {
+    alert("Cadastrado com Sucesso !!!");
   }
 }
 
