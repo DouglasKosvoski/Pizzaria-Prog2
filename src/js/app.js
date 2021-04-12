@@ -108,6 +108,21 @@ function envia_form_contato() {
   }
 }
 
+function login() {
+  var email = document.getElementById("login_email").value;
+  var senha = document.getElementById("login_senha").value;
+  
+  if (email == "") {
+    alert("Insira o Email !!!");
+  }
+  else if (senha == "") {
+    alert("Insira a Senha !!!");
+  }
+  else {
+    alert("Logado !!!");
+  }
+}
+
 window.onresize = function() {
   largura = window.innerWidth;
   var nav = document.getElementById("navbar");
