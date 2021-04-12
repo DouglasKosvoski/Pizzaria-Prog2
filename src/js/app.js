@@ -81,6 +81,33 @@ function finalizar_pedido() {
   }
 }
 
+function form_contato() {
+}
+
+function envia_form_contato() {
+  var nome = document.getElementById("contato_name").value;
+  var email = document.getElementById("contato_email").value;
+  var assunto = document.getElementById("contato_subject").value;
+  var tel = document.getElementById("contato_tel").value;
+  var place = document.getElementById("contato_place").value;
+  
+  if(nome == "") {
+    alert("Insira o Nome Completo!");
+  }
+  else if (email == "") {
+    alert("Insira seu Email!");
+  }
+  else if (tel == "") {
+    alert("Insira o Numero de Telefone!");
+  }
+  else if (assunto == "") {
+    alert("Insira o Assunto!");
+  }
+  else {
+    alert("Enviado!!!");
+  }
+}
+
 window.onresize = function() {
   largura = window.innerWidth;
   var nav = document.getElementById("navbar");
