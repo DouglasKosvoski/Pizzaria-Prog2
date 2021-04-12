@@ -177,11 +177,10 @@ textarea {
 }
 
 table.cardapio {
-  background-color: ghostwhite;
-  /* border: 4px solid re; */
+  background-color: #495057;
   border-collapse: collapse;
   text-align: center;
-  width: 60%;
+  width: 80%;
   height: 12rem;
   margin-top: 2rem;
   margin-left: 50%;
@@ -189,7 +188,7 @@ table.cardapio {
 }
 
 table.cardapio td, table.cardapio th {
-  border: 2px solid gray;
+  border: 2px solid black;
   padding: 3px 2px;
 }
 
@@ -201,18 +200,19 @@ table.cardapio tbody td {
 }
 
 table.cardapio tr:nth-child(even) {
-  background: darkgray;
+  background: #6c757d;
 }
 
 table.cardapio thead {
-  background: gold;
+  background: #212529;
 }
 
 table.cardapio thead th {
   font-size: 1.2rem;
   font-weight: lighter;
-  color: black;
+  color: #f8f9fa;
   text-align: center;
+  padding: 8px;
 }
 
 .flex-container2 {
@@ -337,7 +337,6 @@ form label {
   font-size: 2rem;
 }
 
-/* ///////////// */
 .tamanho-pizza {
   position: relative;
   display: inline-block;
