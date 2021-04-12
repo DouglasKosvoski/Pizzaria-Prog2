@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Francesco Pizzaria</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Website para Trabalho em Sala PROG2">
+    <meta name="keywords" content="Pizza, Pizzaria, Francesco, Forno a Lenha">
+    <meta name="author" content="Douglas Kosvoski">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Icons & style -->
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/app.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  </head>
+  <body>
+
+    <header>
+      <!-- Title -->
+      <button type="button" id="show_menu" onclick="show_menu()">&equiv;</button>
+      <a style="text-decoration: none" href="../src/index.html">
+        <p class="title">Pizzaria Francesco ©</p>
+      </a>
+
+      <!-- Navbar -->
+      <nav id="navbar" class="navbar">
+        <a class="navitem" href="./index.html">Índice</a>
+        <a class="navitem" href="./quemsomos.html">Quem somos</a>
+        <a class="navitem" href="./cliente.html">Cliente</a>
+        <a class="navitem" href="./pedidos.html">Pedidos</a>
+        <a class="navitem" href="./precos.html">Preços</a>
+        <a class="navitem" href="./contato.html">Contato</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Quem somos -->
+      <div class="center quem-somos">
+        <p id="titulo-about">Quem Somos</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+
+      <!-- Nossa Missao -->
+      <div class="center quem-somos">
+        <p id="titulo-quem-somos">Nossa Missao</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <!-- <img class="flex-item2" src="../imgs/pegando_pizza.jpeg" alt="Pessoa pegando um pedaco de pizza"> -->
+      </div>
+
+      <!-- Valores -->
+      <div class="center valores">
+        <img class="img-equipe" src="../imgs/crew2.jpeg" alt="Equipe Reunida">
+      </div>
+    </main>
+    
+    <div id="chat">
+      <p id="texto">Falar com os atendentes</p>
+      <div id="botoes">
+        <span id="minChat" class="chat-button" onclick="minimize_chat()">&or;</span>
+        <span id="maxChat" class="chat-button" onclick="maximize_chat()">&and;</span>
+        <span id="closeChat" class="chat-button" onclick="close_chat()">x</span>
+      </div>
+    </div>
+
+    <!-- Contacts and Social Media -->
+    <footer class="flex-container" style="top: 100%">
+      <!-- Company Name -->
+      <div class="flex-item">
+        <a style="text-decoration: none" href="../src/index.html">
+          <p style="font-size: 1.4rem">Francesco Pizzaria ©</p>
+        </a>
+      </div>
+
+      <!-- Contacts -->
+      <div class="flex-item">
+        <p style="font-size: 1.4rem">Contatos</p>
+        <p><i class="fas fa-phone-alt"></i> (49) 91234-5678</p>
+        <p><i class="fab fa-whatsapp"></i> (49) 99876-5432</p>
+        <a style="text-decoration: none; color: white" href="mailto:chapaquente@Francesco.com">
+          <p><i class="far fa-envelope"></i> contato@Francesco.com</p>
+        </a>
+      </div>
+
+      <!-- Social Media -->
+      <div class="flex-item">
+        <p style="font-size: 1.4rem">Redes Sociais</p>
+        <p><i class="fab fa-facebook-square"></i> Pizzaria Francesco</p>
+        <p><i class="fab fa-instagram"></i> ChapaQuente</p>
+      </div>
+
+    </footer>
+  </body>
+</html>
