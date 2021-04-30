@@ -1,14 +1,20 @@
 
-<?php include './static/header.php'; ?>
-<?php include './static/navbar.php'; ?>
+<?php include './php/static/header.php'; ?>
+<?php include './php/static/navbar.php'; ?>
 
   <main>
-    <!-- Slogan -->
-    <p class="slogan" id="slogan">Pizzaria Francesco Sempre Com A Chapa Quente</p>
-    <!-- Background Image -->
-    <img class="background_img" src="../imgs/furnace.jpeg" alt="Fornalha a lenha"><br>
+    <?php
+    if(isset($_GET['acao'])){
+      include "./php/{$_GET['acao']}.php";
+    }
+    else{
+      include "./php/inicio.php";
+    }
+    ?>
   </main>
   
-<?php include './static/promo.php'; ?>
-<?php include './static/chat.php'; ?>
-<?php include './static/footer.php'; ?>
+<?php include './php/static/promo.php'; ?>
+<?php include './php/static/chat.php'; ?>
+<?php include './php/static/footer.php'; ?>
+
+
