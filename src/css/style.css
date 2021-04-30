@@ -769,9 +769,10 @@ label img {
     display : inline-block;
   }
   
-  input[type="checkbox"][id^="myCheckbox"] {
+  input[type="checkbox"][class^="myCheckbox"] {
     display : none;
   }
+
   
   label {
     margin  : 0;

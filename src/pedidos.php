@@ -1,6 +1,13 @@
 <?php include './static/header.php'; ?>
 <?php include './static/navbar.php'; ?>
 
+<?php 
+  $conexao = mysqli_connect("localhost", "admpizza", "12345", "pizza");
+  $sql = "select * from sabor";
+  $resultado = mysqli_query($conexao, $sql);  
+  mysqli_close($conexao);
+?>
+
 <main>
   <p class="pedido">Faça o seu Pedido</p>
   <!-- Dropdown com os tamanhos -->
@@ -16,54 +23,27 @@
   
   <!-- Menu de Sabores -->
   <ul id="sabores" class="sabores" onchange="sabores()">
-    <li class="sabores-item">
-      <p>atum</p>
-      <input type="checkbox" id="myCheckbox1"/>
-      <label id="sabor-label" for="myCheckbox1"><img src="../imgs/sabores/atum.jpg"/></label>
-      <p>ingredientes: abc</p>
-    </li>
-    <li class="sabores-item">
-      <p>alho</p>
-      <input type="checkbox" id="myCheckbox2"/>
-      <label id="sabor-label" for="myCheckbox2"><img src="../imgs/sabores/alho.jpg"/></label>
-      <p>ingredientes: abc</p>
-    </li>
-    <li class="sabores-item">
-      <p>frango</p>
-      <input type="checkbox" id="myCheckbox3"/>
-      <label id="sabor-label" for="myCheckbox3"><img src="../imgs/sabores/frango.jpg"/></label>
-      <p>ingredientes: abc</p>
-    </li>
-    <li class="sabores-item">
-      <p>marguerita</p>
-      <input type="checkbox" id="myCheckbox4"/>
-      <label id="sabor-label" for="myCheckbox4"><img src="../imgs/sabores/marguerita.jpg"/></label>
-      <p>ingredientes: abc</p>
-    </li>
-    <li class="sabores-item">
-      <p>milho</p>
-      <input type="checkbox" id="myCheckbox5"/>
-      <label id="sabor-label" for="myCheckbox5"><img src="../imgs/sabores/milho.jpg"/></label>
-      <p>ingredientes: abc</p>
-    </li>
-    <li class="sabores-item">
-      <p>mussarela</p>
-      <input type="checkbox" id="myCheckbox6"/>
-      <label id="sabor-label" for="myCheckbox6"><img src="../imgs/sabores/mussarela.jpg"/></label>
-      <p>ingredientes: abc</p>
-    </li>
-    <li class="sabores-item">
-      <p>strogonoff</p>
-      <input type="checkbox" id="myCheckbox7"/>
-      <label id="sabor-label" for="myCheckbox7"><img src="../imgs/sabores/strogonoff.jpg"/></label>
-      <p>ingredientes: abc</p>
-    </li>
-    <li class="sabores-item">
-      <p>vegetariana</p>
-      <input type="checkbox" id="myCheckbox8"/>
-      <label id="sabor-label" for="myCheckbox8"><img src="../imgs/sabores/vegetariana.jpg"/></label>
-      <p>ingredientes: abc</p>
-    </li>
+    <?php 
+    require_once "./class/Flavour.php";
+    require_once "./class/FlavourDAO.php";
+    
+    $asd = new FlavourDAO();
+    $lista = $asd->list();
+    
+    foreach ($lista as $sabor) { ?>
+      <li class="sabores-item">
+        <p>
+          <?=$sabor->getName()?>
+        </p>
+        <input style="display : none;" type="checkbox" id="<?=$sabor->getId()?>"/>
+        <label id="sabor-label" for="<?=$sabor->getId()?>">
+          <p>
+            <?=$sabor->getIngredients()?>
+          </p>
+          <img src="../imgs/sabores/<?=$sabor->getImageName()?>">
+        </label>
+      </li>
+    <?php } ?>
   </ul>
   
   <p id="qtd_sabores" style="text-align: center; font-size: 1.4rem; padding: 1rem;">Você selecionou 0 de 0 sabores.</p>
@@ -74,11 +54,11 @@
       <input value="Sem bordas" type="radio" name="radio" checked/>
     </label>
     
-    <label >Cheddar
+    <label>Cheddar
       <input value="Cheddar" type="radio" name="radio"/>
     </label>
     
-    <label >Catupiry
+    <label>Catupiry
       <input value="Catupiry" type="radio" name="radio"/>
     </label>
   </div>
