@@ -38,6 +38,20 @@ class Flavour{
   public function setImageName($nomeImagem){
     $this->nomeImagem = $nomeImagem;
   } 
+  
+  public function validate(){
+    $erros = array();
+    if (empty($this->getName())) {
+      $erros[] = 'Necessario informar um nome';
+    }
+    if (empty($this->getIngredients())) {
+      $erros[] = 'Necessario informar os ingredientes';
+    }
+    if (empty($this->getImageName())) {
+      $erros[] = 'Necessario selecionar uma imagem';
+    }
+    return $erros;
+  } 
 }
 
 ?>

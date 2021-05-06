@@ -8,12 +8,12 @@
   
   <!-- Navbar -->
   <nav id="navbar" class="navbar">
-    <a class="navitem" href="#">Índice</a>
-    <a class="navitem" href="#">Quem somos</a>
-    <a class="navitem" href="#">Cliente</a>
-    <a class="navitem" href="#">Pedidos</a>
-    <a class="navitem" href="#">Preços</a>
-    <a class="navitem" href="#">Contato</a>
+    <a class="navitem" href="../../index.php?acao=inicio">Índice</a>
+    <a class="navitem" href="../../index.php?acao=quemsomos">Quem somos</a>
+    <a class="navitem" href="../../index.php?acao=cliente">Cliente</a>
+    <a class="navitem" href="../../index.php?acao=pedidos">Pedidos</a>
+    <a class="navitem" href="../../index.php?acao=precos">Preços</a>
+    <a class="navitem" href="../../index.php?acao=contato">Contato</a>
   </nav>
   
 </header>
