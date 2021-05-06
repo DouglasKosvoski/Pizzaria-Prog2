@@ -4,10 +4,10 @@
 <main>
   <?php
   if(isset($_GET['acao'])){
-    include_once "./php/{$_GET['acao']}.php";
+    include_once "./php/views/{$_GET['acao']}.php";
   }
   else{
-    include_once "./php/inicio.php";
+    include_once "./php/views/inicio.php";
   }
   ?>
 </main>
