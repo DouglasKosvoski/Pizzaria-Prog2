@@ -1,13 +1,6 @@
 <?php include './static/header.php'; ?>
 <?php include './static/navbar.php'; ?>
 
-<?php 
-  $conexao = mysqli_connect("localhost", "admpizza", "12345", "pizza");
-  $sql = "select * from sabor";
-  $resultado = mysqli_query($conexao, $sql);  
-  mysqli_close($conexao);
-?>
-
 <main>
   <p class="pedido">Faça o seu Pedido</p>
   <!-- Dropdown com os tamanhos -->
@@ -24,8 +17,8 @@
   <!-- Menu de Sabores -->
   <ul id="sabores" class="sabores" onchange="sabores()">
     <?php 
-    require_once "./class/Flavour.php";
-    require_once "./class/FlavourDAO.php";
+    require_once "./php/class/Flavour.php";
+    require_once "./php/class/FlavourDAO.php";
     
     $asd = new FlavourDAO();
     $lista = $asd->list();

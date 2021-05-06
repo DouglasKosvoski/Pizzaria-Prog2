@@ -14,7 +14,7 @@ class FlavourDAO {
     try {
       $query = $this->connection->prepare("select * from sabor order by nome");
       $query->execute();
-      $reg = $query->fetchAll(PDO::FETCH_CLASS, "Sabor");
+      $reg = $query->fetchAll(PDO::FETCH_CLASS, "Flavour");
       return $reg;
     }
     catch (PDOException $e){

@@ -1,6 +1,6 @@
 <?php 
 
-class Sabor{
+class Flavour{
   private $codigo;
   private $nome;
   private $ingredientes;

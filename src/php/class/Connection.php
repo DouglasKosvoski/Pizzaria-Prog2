@@ -1,6 +1,5 @@
 <?php
 class Connection{
-
   public static $connection;
   
   public static function connect(){
@@ -15,6 +14,4 @@ class Connection{
     }
     return self::$connection;
   }
-}
-
-?>
+}?>
