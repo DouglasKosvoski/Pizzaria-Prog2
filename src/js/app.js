@@ -153,6 +153,11 @@ function cadastro() {
   }
 }
 
+function closePopup() {
+  var asdasd = document.getElementById("promo_popup");
+  asdasd.style.display = "none";
+}
+
 window.onresize = function() {
   largura = window.innerWidth;
   var nav = document.getElementById("navbar");
