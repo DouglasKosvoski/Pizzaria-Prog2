@@ -31,8 +31,6 @@
   
   <br>
   
-  <div>
-    <button class="btn" type="submit" name="cadastrar">Confirmar</button>
-    <button class="btn" type="reset">Limpar campos</button>
-  </div>
+  <button class="btn" type="submit" name="cadastrar">Confirmar</button>
+  <button class="btn" type="reset">Limpar campos</button>
 </form>

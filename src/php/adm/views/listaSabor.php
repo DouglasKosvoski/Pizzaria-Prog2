@@ -1,7 +1,5 @@
 <main>
   <h2><?php $titulo ?></h2>
-  
-  
   <table class="cardapio">
     <thead>
       <tr>
