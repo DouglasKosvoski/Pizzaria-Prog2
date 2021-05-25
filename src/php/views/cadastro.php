@@ -73,7 +73,7 @@ if (isset($_GET['sub'])) {
     <input class="btn" style="text-align: center; background-color: gold;" type="reset" value="Limpar">
     <input class="btn" style="text-align: center; background-color: #19b35b;" type="submit" value="Cadastrar">
     
-    <p class="center">Já é cadastrado? Faça seu <a href="./cliente.php">Login</a>.</p>
+    <p class="center">Já é cadastrado? Faça seu <a href="./index.php?acao=cliente">Login</a>.</p>
   </form>
 </main>
 

@@ -35,19 +35,43 @@ class ClienteDAO {
   
   public function cadastrar(Cliente $user) {
     $senha = password_hash($user->getSenha(), PASSWORD_DEFAULT);
-
+    $user->setSenha($senha);
+    
     try {
       $query = $this->conexao->prepare("insert into cliente values (null, :nome, :mail, :tel, :dt, :pswd, :end, null, null, null, null, :obs)");
       $query->bindValue(":nome", $user->getNome());
       $query->bindValue(":mail", $user->getEmail());
       $query->bindValue(":tel", $user->getTelefone());
       $query->bindValue(":dt", $user->getDataNascimento());
-      $query->bindValue(":pswd", $senha);
+      $query->bindValue(":pswd", $user->getSenha());
       $query->bindValue(":end", $user->getEndereco());
       $query->bindValue(":obs", $user->getObservacoes());
       return $query->execute();
     }
     catch (PDOException $e){
+      echo "Erro no acesso aos dados: ". $e->getMessage();
+    }
+  }
+
+  public function login($mail, $senha) {
+    try {
+      $query = $this->conexao->prepare("select * from cliente where email=:e");
+      $query->bindValue(":e", $mail);
+      $query->execute();
+      $registro = $query->fetchAll(PDO::FETCH_CLASS, "Cliente");
+
+      if($query->rowCount() == 1){
+        if(!password_verify($senha, $registro[0]->getSenha())){
+          return false;
+        }
+        else {
+          return true;
+        }
+      }
+      else{
+        return false;
+      }
+    } catch (PDOException $e) {
       echo "Erro no acesso aos dados: ". $e->getMessage();
     }
   }
