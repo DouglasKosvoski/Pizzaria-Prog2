@@ -12,7 +12,7 @@
       <button class="btn" style="background-color: gold;" type="reset">Reset</button>
       <button class="btn" style="background-color: #19b35b;" type="button" onclick="login()">Log In</button>
       
-      <p class="center">Não possui uma conta? Crie seu cadastro <a href="./cadastro.php">aqui</a>.</p>
+      <p class="center">Não possui uma conta? Crie seu cadastro <a href="./index.php?acao=cadastro">aqui</a>.</p>
     </fieldset>
   </form>
 </main>
